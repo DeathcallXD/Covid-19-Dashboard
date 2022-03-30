@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import {Container, Image, Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 import '../css/styles.css';
 
 
@@ -24,6 +24,7 @@ function NavBar(){
           width="30"
           height="30"
           className="d-inline-block align-top space-right"
+          alt="Logo"
         />
         Covid 19 Dashboard
       </Navbar.Brand>
