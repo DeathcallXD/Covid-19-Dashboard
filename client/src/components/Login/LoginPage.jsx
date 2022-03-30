@@ -15,11 +15,15 @@ function Login() {
   }
 
   const handleLogin = async (googleData) => {
+
+    let baseURL = `https://covid-19-dashboard-mern.herokuapp.com`;
+    //let baseURL = `http://localhost:5000`;
+
     let token = {
       token: googleData.tokenId
     }
     try{
-      const response = await axios.post('https://covid-19-dashboard-mern.herokuapp.com/api/google-login', token);
+      const response = await axios.post(`${baseURL}/api/google-login`, token);
 
       dispatch({type: 'ADD_USER_VIA_GOOGLE', payload: response.data});
 
@@ -36,7 +40,7 @@ function Login() {
       <Container>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
-            <img src={window.location.origin + '/opslyftLoginPageLogo.png'} />
+            <img src={window.location.origin + '/opslyftLoginPageLogo.png'} alt="Logo"/>
           </Col>
           <Col xs={12} sm={12} md={12} lg={12}>
             <GoogleLogin
