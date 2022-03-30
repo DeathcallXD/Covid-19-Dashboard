@@ -16,8 +16,8 @@ function Login() {
 
   const handleLogin = async (googleData) => {
 
-    let baseURL = `https://covid-19-dashboard-mern.herokuapp.com`;
-    //let baseURL = `http://localhost:5000`;
+    //let baseURL = `https://covid-19-dashboard-mern.herokuapp.com`;
+    let baseURL = `http://localhost:5000`;
 
     let token = {
       token: googleData.tokenId
