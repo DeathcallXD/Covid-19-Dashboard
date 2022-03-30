@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+.space-right {
+  margin-right: 0.5rem;
+}
+.clickable:hover {
+  cursor: pointer;
+}
+.make-bold{
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: 'Gideon Roman', cursive;
+}
+
+.adjust-graphs{
+  margin: 1rem 0 1rem 0;
+  padding: 1.5rem;
+}
+
+.adjust-intro{
+  margin: 1rem 0 0 0;
+}
