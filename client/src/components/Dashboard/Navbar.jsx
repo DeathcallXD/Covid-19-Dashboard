@@ -20,7 +20,7 @@ function NavBar(){
       <Container>
       <Navbar.Brand href="#home">
         <img
-          src={window.location.origin + '/opslyftLogo.png'}
+          src={window.location.origin + '/opsLyftLogo.png'}
           width="30"
           height="30"
           className="d-inline-block align-top space-right"
