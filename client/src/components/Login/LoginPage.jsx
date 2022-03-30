@@ -19,7 +19,7 @@ function Login() {
       token: googleData.tokenId
     }
     try{
-      const response = await axios.post('http://localhost:5000/api/google-login', token);
+      const response = await axios.post('https://covid-19-dashboard-mern.herokuapp.com/api/google-login', token);
 
       dispatch({type: 'ADD_USER_VIA_GOOGLE', payload: response.data});
 
