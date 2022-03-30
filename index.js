@@ -18,13 +18,6 @@ app.use(cors());
 
 app.use('/api/google-login',googleLoginRoute);
 
-app.get("/",(req,res)=>{
-  console.log(req);
-  res.json({
-    success:true
-  })
-})
-
 const CONNECTION_URL = process.env.CONNECTION_URL;
 const PORT = process.env.PORT || 5000;
 
